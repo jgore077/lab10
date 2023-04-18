@@ -73,6 +73,12 @@ class myHashTable{
                 return;
             }
         }
+        for(int i=0;i<students.length;i++){
+            if(students[i]==null){
+                students[i]=s;
+                return;
+            }
+        }
     }
     public static void main(String[] args) throws FileNotFoundException{
         Scanner sc = new Scanner(new File("StudentsNames.txt"));
